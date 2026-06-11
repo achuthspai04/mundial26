@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import { formatInTimeZone } from "date-fns-tz";
 import { sendGAEvent } from "@next/third-parties/google";
 import { Card, CardContent } from "@/components/ui/card";
@@ -28,7 +29,10 @@ interface MatchCardProps {
   timezone: TimezoneOption;
 }
 
-export function MatchCard({ match, timezone }: MatchCardProps) {
+export const MatchCard = memo(function MatchCard({
+  match,
+  timezone,
+}: MatchCardProps) {
   const kickoff = new Date(match.utc_datetime);
   const time = formatInTimeZone(kickoff, timezone.iana, "h:mm a");
 
@@ -127,4 +131,4 @@ export function MatchCard({ match, timezone }: MatchCardProps) {
       </CardContent>
     </Card>
   );
-}
+});
