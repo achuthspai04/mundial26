@@ -36,7 +36,7 @@ export default function Home() {
   }, [group, search]);
 
   return (
-    <div className="flex flex-1 flex-col bg-background">
+    <div className="flex flex-1 flex-col bg-background pb-24 sm:pb-20">
       <Hero />
       <Controls
         timezone={timezone}

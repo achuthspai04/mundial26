@@ -237,7 +237,7 @@ const faqSchema = {
 
 export default function FaqPage() {
   return (
-    <div className="flex flex-1 flex-col bg-background">
+    <div className="flex flex-1 flex-col bg-background pb-24 sm:pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
