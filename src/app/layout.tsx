@@ -12,56 +12,43 @@ const notoSans = Noto_Sans({
 });
 
 const SITE_URL = "https://mundial26.pisharath.dev";
-const SITE_TITLE = "Mundial26 — FIFA World Cup 2026 Group Stage Schedule";
-const SITE_DESCRIPTION =
-  "Every match of the FIFA World Cup 2026 group stage, in your timezone, ready for your calendar.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: SITE_TITLE,
-  description: SITE_DESCRIPTION,
-  keywords: [
-    "FIFA World Cup 2026",
-    "World Cup 2026 schedule",
-    "World Cup 2026 fixtures",
-    "World Cup match times",
-    "World Cup timezone converter",
-    "World Cup calendar",
-    "Mundial 2026",
-    "Mundial26",
-  ],
+  title:
+    "Mundial26 — FIFA World Cup 2026 Schedule in IST, BST, CET | Add to Google Calendar",
+  description:
+    "View the complete FIFA World Cup 2026 match schedule in your timezone — IST, BST, CET, ET and more. Add any match to Google Calendar, download .ics or share on WhatsApp. Free, no signup. All 72 group stage matches including England, Brazil, Argentina, France, Germany, Spain and Portugal fixtures.",
+  keywords:
+    "FIFA World Cup 2026, World Cup schedule IST, World Cup 2026 time India, football schedule 2026, Mundial 2026, WC26 calendar, World Cup BST, World Cup CET, England World Cup time, Brazil World Cup IST, Argentina World Cup India, add World Cup to Google Calendar",
   icons: {
     icon: "/26_Logo__1_.png",
   },
   openGraph: {
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
+    title: "Mundial26 — FIFA World Cup 2026 Schedule",
+    description: "Every match. Your timezone. Your calendar.",
     url: SITE_URL,
     siteName: "Mundial26",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://mundial26.pisharath.dev/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Mundial26 — Every match. Your timezone. Your calendar.",
+        alt: "Mundial26 — FIFA World Cup 2026 Schedule",
       },
     ],
-    locale: "en_US",
+    locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
-    images: ["/og-image.png"],
+    title: "Mundial26 — FIFA World Cup 2026 Schedule",
+    description: "Every match. Your timezone. Your calendar.",
+    images: ["https://mundial26.pisharath.dev/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
   },
   alternates: {
     canonical: SITE_URL,

@@ -55,6 +55,20 @@ export default function Home() {
         <MatchTable matches={filteredMatches} timezone={timezoneOption} />
       )}
       <KnockoutBanner />
+      <section className="mx-auto w-full max-w-5xl px-4 pb-8 sm:px-6">
+        <p className="font-sans text-[13px] font-normal text-mundial-muted">
+          Mundial26 shows the complete FIFA World Cup 2026 schedule converted
+          to your local timezone. Whether you need the World Cup 2026
+          schedule in IST for India, BST for the UK, CET for Europe, ET for
+          the US, or GST for the Gulf — all 72 group stage match times
+          convert automatically. Add England, Brazil, Argentina, France,
+          Germany, Spain, Portugal, or any team&apos;s fixtures directly to
+          Google Calendar in one click. The FIFA World Cup 2026 runs from
+          June 11 to July 19, 2026 across the United States, Canada and
+          Mexico — the largest World Cup in history with 48 teams and 104
+          matches.
+        </p>
+      </section>
       <Footer />
       <FeedbackPopup />
     </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -14,6 +15,10 @@ export function Footer() {
           >
             Switchcompany
           </a>
+          {" · "}
+          <Link href="/faq" className="text-white hover:underline">
+            FAQ
+          </Link>
         </p>
         <div className="flex items-center gap-2">
           <Image
